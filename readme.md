@@ -4,6 +4,10 @@ Figuring out the logic on this one was tricky for me. I was mostly on the right 
 
 Overall I learned a lot on this project, especially the ability to call a function by creating the string representation of it using other functions that will resolve to that function name. 
 
+You can visit the page here:
+
+[Password Generator](https://trilambda122.github.io/hw3-Password_Gen/)
+
 
 
 ## TODO
@@ -96,7 +100,8 @@ function promptForLength(displayString) {
 ```
 
 **GeneratePassword function**
- This is where all the action happens
+
+This is where all the action happens
 
 We use an array of password config objects to calculate how many options were selected. The sum of this is used as an incrementor for a loop.
 ```
