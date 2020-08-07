@@ -112,11 +112,11 @@ function generatePassword(config) {
 // Write password to the #password input
 function writePassword() {
 
-    pwdConfig.lower = promptForValues("would you like lowercase values");
-    pwdConfig.upper = promptForValues("would you like uppercase values");
-    pwdConfig.numeric = promptForValues("would you like numeric values");
-    pwdConfig.specialChars = promptForValues("would you like special charaters values");
-    pwdConfig.pwLength = promptForLength("what lenght would you like your password to be? (number between 8 and 128 please)")
+    pwdConfig.lower = promptForValues("Would you like lowercase values (Y or N)");
+    pwdConfig.upper = promptForValues("Would you like uppercase values (Y or N)");
+    pwdConfig.numeric = promptForValues("Would you like numeric values (Y or N)");
+    pwdConfig.specialChars = promptForValues("Would you like special charaters values (Y or N)");
+    pwdConfig.pwLength = promptForLength("What lenght would you like your password to be? (number between 8 and 128 please)")
 
     var password = generatePassword(pwdConfig);
     var passwordText = document.querySelector("#password");
