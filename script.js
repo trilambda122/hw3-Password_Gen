@@ -111,6 +111,13 @@ function generatePassword(config) {
 
 // Write password to the #password input
 function writePassword() {
+
+    pwdConfig.lower = promptForValues("would you like lowercase values");
+    pwdConfig.upper = promptForValues("would you like uppercase values");
+    pwdConfig.numeric = promptForValues("would you like numeric values");
+    pwdConfig.specialChars = promptForValues("would you like special charaters values");
+    pwdConfig.pwLength = promptForLength("what lenght would you like your password to be? (number between 8 and 128 please)")
+
     var password = generatePassword(pwdConfig);
     var passwordText = document.querySelector("#password");
 
@@ -124,8 +131,8 @@ generateBtn.addEventListener("click", writePassword);
 
 //Main code  here
 // create password object and fill it with the config values from the promts
-pwdConfig.lower = promptForValues("would you like lowercase values");
-pwdConfig.upper = promptForValues("would you like uppercase values");
-pwdConfig.numeric = promptForValues("would you like numeric values");
-pwdConfig.specialChars = promptForValues("would you like special charaters values");
-pwdConfig.pwLength = promptForLength("what lenght would you like your password to be? (number between 8 and 128 please)")
+// pwdConfig.lower = promptForValues("would you like lowercase values");
+// pwdConfig.upper = promptForValues("would you like uppercase values");
+// pwdConfig.numeric = promptForValues("would you like numeric values");
+// pwdConfig.specialChars = promptForValues("would you like special charaters values");
+// pwdConfig.pwLength = promptForLength("what lenght would you like your password to be? (number between 8 and 128 please)")
